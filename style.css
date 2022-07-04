@@ -1,66 +1,204 @@
-font-family: 'Lato', sans-serif;
-font-family: 'Red Hat Display', sans-serif;
-
+font-family: "Lato", sans-serif;
+font-family: "Red Hat Display", sans-serif;
 
 /* General styles */
 
+h1 {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 64px;
+  letter-spacing: 0.05em;
+  color: #000000;
+}
 
+h1 {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 64px;
+  letter-spacing: 0.05em;
+  color: #000000;
+}
 
+h2 {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 166%;
+  letter-spacing: 0.1em;
+  color: #000000;
+  margin: 30px 0px;
+}
+
+h3 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.5em;
+  color: #000000;
+  margin: 18px auto;
+}
+
+h4 {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 64px;
+  letter-spacing: 0.05em;
+  color: #000000;
+}
+
+p {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 32px;
+  letter-spacing: 0.05em;
+  color: #565656;
+}
+
+main,
+footer > .container,
+header {
+  max-width: 1170px;
+  margin: auto;
+}
+
+section {
+  margin: 50px auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    margin: 0px 10px;
+  }
+
+  main,
+  footer > .container,
+  header {
+    max-width: 750px;
+    margin: 0px 10px;
+  }
+}
+
+@media only screen and (max-width: 1230px) {
+  .container {
+    margin: 0px 33px;
+  }
+
+  main,
+  footer > .container,
+  header {
+    max-width: 1130px;
+    margin: 0px 33px;
+  }
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+}
 
 /* footer */
 
+.footer__main-info > ul li:hover {
+  background-color: #565656;
+}
 
+.footer__main-info > ul li:hover svg > path {
+  fill: white;
+}
 
-#info {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 10%;
-  }
-  
-  #info h6 {
-    display: block;
-    min-width: 50%;
-  }
-  
-  footer {
-    background-color: #f4f4f4;
-    padding: 30px 0px;
-  }
-  
+footer p {
+  text-align: center;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 166%;
+  letter-spacing: 0.1em;
+  color: #000000;
+  margin-top: 25px;
+}
+
+footer a {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 166%;
+  letter-spacing: 0.1em;
+  color: #000000;
+}
+
+@media only screen and (max-width: 1230px) {
   .footer__main-info {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     max-width: 1170px;
     margin: auto;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
   }
-  
-  .footer__main-info ul {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-  }
-  
-  .footer__main-info li {
-    display: block;
-    width: 50px;
-    height: 50px;
-    border: 1px solid #565656;
-  }
-  
-  .footer__main-info li svg {
-    display: block;
-    margin: auto;
-    padding-top: 25%;
-  }
-  
-  .footer-right h1 {
-    padding: 15px 0px;
-  }
-  
-  .footer-right a {
-    padding: 15px 0px;
-  }
-  
+}
+
+#info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10%;
+}
+
+#info h6 {
+  display: block;
+  min-width: 50%;
+}
+
+footer {
+  background-color: #f4f4f4;
+  padding: 30px 0px;
+}
+
+.footer__main-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1170px;
+  margin: auto;
+}
+
+.footer__main-info ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer__main-info li {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #565656;
+}
+
+.footer__main-info li svg {
+  display: block;
+  margin: auto;
+  padding-top: 25%;
+}
+
+.footer-right a {
+  padding: 15px 0px;
+}
